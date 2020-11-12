@@ -1,0 +1,91 @@
+*{
+   margin: 0%;
+   padding: 0%; 
+   box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#leftPanel{
+height: 100%;
+width: 34%;
+background-color: #560463;
+}
+#pic{
+height: 60%;
+width: 22%;
+background-image: url(diwali.jpg.jpg);
+background-size: cover;
+background-position: top;
+position: absolute;
+top: 22%;
+left: 22%;
+box-shadow: 0px 5px 30px 4px rgb(77,3,77);
+animation: PicAnim 2.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#text{
+width: 40%;
+position: absolute;
+top: 30%;
+right: 5%;
+animation: TextAnim 2.2s cubic-bezier(0.77, 0, 0.175, 1) ;
+}
+h1{
+    font-family: 'Parisienne', cursive;
+    color: #d21224;
+}
+p{
+    font-family: 'Rancho', cursive;
+font-size: 29px;
+font-weight: 200;
+color: #f05f26;
+}
+button{
+    font-family: 'Rancho', cursive;
+height: 40px;
+width: 140px;
+font-size: 23;
+background: purple;
+border: 1.5px solid none;
+color: white;
+transition: ease-in-out 0.3s;
+}
+button:hover{
+    border: 1.5px solid purple;
+    background: none;
+    color: purple;
+    cursor: pointer;
+}
+#h{
+font-size: 65px;
+font-weight: 550;
+}
+#sh{
+    font-size: 45px;
+    font-weight: 500;
+    color: #ed613e;
+    }
+    
+    @keyframes PicAnim {
+from{
+    transform: translateX(-100%);
+}
+to{
+    transform: translateX(0%);
+}
+    } 
+
+    @keyframes TextAnim {
+from{
+    transform: translateY(100%);
+    opacity: 0;
+}
+to{
+    transform: translateY(0%);
+    opacity: 1;
+}
+    }
